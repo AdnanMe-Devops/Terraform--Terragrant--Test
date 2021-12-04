@@ -1,0 +1,47 @@
+Inside the terminal, input the following command to 
+
+authenticate with Azure:
+
+ Change the directory to the test folder where the test file is 
+
+located:
+
+cd test
+ 
+
+ Input go get to download the dependencies for the test:
+
+go get -t -v
+
+
+The dependencies include the packages that were specified during 
+
+the import declaration. This process may take a minute. 
+
+ 
+ Run go test to start the test:
+
+go test -v webserver_test.go
+Terraform will start to execute the example code:
+
+
+The values from terraformOptions are passed into the Terraform CLI:
+
+The web server infrastructure is deployed successfully:
+
+The HTTP test runs on a retry loop to catch the web server once 
+
+it's fully up and running:
+
+
+Once the web server is running, the HTTP request is made to 
+
+validate that  a status 200 is returned along with the "Cloud 
+
+How are you I  am Great!" string  in the body:
+
+
+
+A terraform destroy is executed to clean up the test 
+
+infrastructure:
