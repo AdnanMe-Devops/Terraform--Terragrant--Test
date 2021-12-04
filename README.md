@@ -8,3 +8,4 @@ Terraform resource setting. This will quickly become difficult to maintain and p
 validate conditional logic, variable outcomes, and infrastructure functionality.
 This test can now be executed every time after modifying the Terraform module to confirm that it works as expected quickly. An even better approach would be to store the module code in a Git repository and add this test to a CI pipeline, so changes will automatically be validated before merging. 
 
+Note: Terratest should be used in a separate Azure subscription from production. It's recommended to have an Azure subscription just for testing Terraform code. This way automated cleanup can be run against the account to ensure resources are not left behind.
