@@ -41,3 +41,6 @@ status 200 and the body contains the following string
 Helo how r you  we  Are Great!", 30, 5*time.Second)
 }
  
+//A testing function is declared called TestTerraformWebserverExample. Testing functions in GO need to start with the word Test with a capital T followed by a capitalized letter after Test. This testing function will contain the code for 
+
+the test.
