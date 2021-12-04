@@ -54,3 +54,10 @@ status 200 and the body contains the following string
 How are you IamGreat!", 30, 5*time.Second)
 }
  
+//Starting at the top package test declares that the name of the package is test. This is for describing the purpose of the package. 
+
+Next is the import declaration. The import declaration contains libraries or packages used in the Golang code. Packages native to 
+
+GO like fmt can be referenced as well as packages from source control repositories like GitHub. Notice some of the libraries from 
+
+Terratest are referenced and will be used to deploy the Terraform code and perform an HTTP test to validate the web site. 
