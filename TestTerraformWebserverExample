@@ -44,3 +44,8 @@ Helo how r you  we  Are Great!", 30, 5*time.Second)
 //A testing function is declared called TestTerraformWebserverExample. Testing functions in GO need to start with the word Test with a capital T followed by a capitalized letter after Test. This testing function will contain the code for 
 
 the test.
+//The variable terraformOptions is declared. In GO wecan declare variables using :=. Inside the variable declaration, the 
+github.com/gruntwork-io/terratest/modules/terraform library is being used to pass values into Terraform. &terraform.Options is an object in Golang called a struct. The struct contains key-value 
+pairs that make up a collection of settings that can be then passed into the Terraform CLI. This includes the directory of the 
+Terraform example code to run for the test as well as the variables to input while performing a terraform apply.
+
